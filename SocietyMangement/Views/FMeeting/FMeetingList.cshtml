@@ -1,0 +1,318 @@
+﻿@model IEnumerable<SocietyMangement.Models.MeetingModel>
+
+@{
+    Layout = "_Layout_Frontend";
+}
+
+<div class="hero page-inner overlay"
+     style="background-image: url('../Frontend/images/hero_bg_1.jpg')">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-9 text-center mt-5">
+                <h1 class="heading" data-aos="fade-up">Meetings</h1>
+
+                <nav aria-label="breadcrumb"
+                     data-aos="fade-up"
+                     data-aos-delay="200">
+                    <ol class="breadcrumb text-center justify-content-center">
+                        <li class="breadcrumb-item"><a asp-controller="Gallary" asp-action="GallaryList">Home</a></li>
+                        <li class="breadcrumb-item active text-white-50"
+                            aria-current="page">Meetings</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section bg-light">
+    <div class="container">
+        <div class="text-center mb-4">
+            <input type="text" id="searchMeeting" class="form-control w-50 mx-auto" placeholder="Search meetings by title...">
+        </div>
+
+        <div class="timeline" id="meetingList">
+            @foreach (var meeting in Model)
+            {
+                <div class="timeline-item" data-aos="zoom-in" data-aos-delay="@((meeting.MeetingID % 5) * 100)">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">@meeting.MeetingTitle</h3>
+                        <p class="timeline-description">@meeting.Description</p>
+                        <ul class="timeline-details">
+                            <li><strong>Start:</strong> <span class="highlight">@meeting.StartDateTime</span></li>
+                            <li><strong>End:</strong> <span class="highlight">@meeting.EndDateTime</span></li>
+                            @if (!string.IsNullOrEmpty(meeting.Location))
+                            {
+                                <li><strong>Location:</strong> @meeting.Location</li>
+                            }
+                           @*  <li><strong>Organizer ID:</strong> @meeting.OrganizerID</li> *@
+                            <li><strong>Status:</strong> <span class="status-label @(meeting.Status.ToLower())">@meeting.Status</span></li>
+                        </ul>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById("searchMeeting").addEventListener("keyup", function () {
+        let filter = this.value.toLowerCase();
+        let meetings = document.querySelectorAll(".timeline-item");
+
+        meetings.forEach(meeting => {
+            let title = meeting.querySelector(".timeline-title").textContent.toLowerCase();
+            if (title.includes(filter)) {
+                meeting.style.display = "block";
+            } else {
+                meeting.style.display = "none";
+            }
+        });
+    });
+</script>
+
+
+<style>
+/* Main Timeline container */
+.timeline {
+    position: relative;
+    margin: 50px 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 50px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.5s ease;
+}
+
+.timeline-item:hover {
+    opacity: 1;
+    transform: translateY(0) scale(1.03);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-item:hover .timeline-dot {
+    transform: scale(1.2);
+    background: #28a745;
+    box-shadow: 0 0 15px rgba(40, 167, 69, 0.8);
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 0;
+    top: 15px;
+    width: 20px;
+    height: 20px;
+    background: #007bff;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.7);
+    transition: all 0.3s ease-in-out;
+}
+
+.timeline-content {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.timeline-title {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: Black;
+    transition: color 0.3s ease-in-out;
+}
+
+.timeline-title:hover {
+    color: #0056b3;
+}
+
+.timeline-description {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #6c757d;
+    line-height: 1.6;
+}
+
+.timeline-details {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.timeline-details li {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: #343a40;
+}
+
+.status-label {
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+.status-label.scheduled {
+    background: #007bff;
+    color: #fff;
+}
+
+.status-label.completed {
+    background: #28a745;
+    color: #fff;
+}
+
+.status-label.cancelled {
+    background: #dc3545;
+    color: #fff;
+}
+
+/* Highlighting Start and End Date */
+.highlight {
+    background-color: #ffeb3b; /* Yellow background */
+    padding: 3px 10px;
+    border-radius: 4px;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.highlight:hover {
+    background-color: #fbc02d; /* Slightly darker yellow on hover */
+}
+
+/* Animation for appearing timeline items */
+.timeline-item[data-aos] {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Timeline dot animation on hover */
+.timeline-dot:hover {
+    animation: pulse 1s infinite;
+}
+
+@@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.4);
+    }
+}
+</style>
+
+
+
+
+<div class="section bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                <div class="box-feature mb-4">
+                    <span class="flaticon-house mb-4 d-block"></span>
+                    <h3 class="text-black mb-3 font-weight-bold">
+                        Quality Properties
+                    </h3>
+                    <p class="text-black-50">
+                        Far far away, behind the word mountains, far from the countries
+                        Vokalia and Consonantia, there live the blind texts.
+                    </p>
+                    <p><a href="#" class="learn-more">Read more</a></p>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                <div class="box-feature mb-4">
+                    <span class="flaticon-house-2 mb-4 d-block-3"></span>
+                    <h3 class="text-black mb-3 font-weight-bold">Top Rated Agent</h3>
+                    <p class="text-black-50">
+                        Far far away, behind the word mountains, far from the countries
+                        Vokalia and Consonantia, there live the blind texts.
+                    </p>
+                    <p><a href="#" class="learn-more">Read more</a></p>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+                <div class="box-feature mb-4">
+                    <span class="flaticon-building mb-4 d-block"></span>
+                    <h3 class="text-black mb-3 font-weight-bold">
+                        Property for Sale
+                    </h3>
+                    <p class="text-black-50">
+                        Far far away, behind the word mountains, far from the countries
+                        Vokalia and Consonantia, there live the blind texts.
+                    </p>
+                    <p><a href="#" class="learn-more">Read more</a></p>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
+                <div class="box-feature mb-4">
+                    <span class="flaticon-house-3 mb-4 d-block-1"></span>
+                    <h3 class="text-black mb-3 font-weight-bold">House for Sale</h3>
+                    <p class="text-black-50">
+                        Far far away, behind the word mountains, far from the countries
+                        Vokalia and Consonantia, there live the blind texts.
+                    </p>
+                    <p><a href="#" class="learn-more">Read more</a></p>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                <div class="box-feature mb-4">
+                    <span class="flaticon-house-4 mb-4 d-block"></span>
+                    <h3 class="text-black mb-3 font-weight-bold">
+                        Quality Properties
+                    </h3>
+                    <p class="text-black-50">
+                        Far far away, behind the word mountains, far from the countries
+                        Vokalia and Consonantia, there live the blind texts.
+                    </p>
+                    <p><a href="#" class="learn-more">Read more</a></p>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                <div class="box-feature mb-4">
+                    <span class="flaticon-building mb-4 d-block-3"></span>
+                    <h3 class="text-black mb-3 font-weight-bold">Top Rated Agent</h3>
+                    <p class="text-black-50">
+                        Far far away, behind the word mountains, far from the countries
+                        Vokalia and Consonantia, there live the blind texts.
+                    </p>
+                    <p><a href="#" class="learn-more">Read more</a></p>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+                <div class="box-feature mb-4">
+                    <span class="flaticon-house mb-4 d-block"></span>
+                    <h3 class="text-black mb-3 font-weight-bold">
+                        Property for Sale
+                    </h3>
+                    <p class="text-black-50">
+                        Far far away, behind the word mountains, far from the countries
+                        Vokalia and Consonantia, there live the blind texts.
+                    </p>
+                    <p><a href="#" class="learn-more">Read more</a></p>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
+                <div class="box-feature mb-4">
+                    <span class="flaticon-house-1 mb-4 d-block-1"></span>
+                    <h3 class="text-black mb-3 font-weight-bold">House for Sale</h3>
+                    <p class="text-black-50">
+                        Far far away, behind the word mountains, far from the countries
+                        Vokalia and Consonantia, there live the blind texts.
+                    </p>
+                    <p><a href="#" class="learn-more">Read more</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

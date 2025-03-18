@@ -1,0 +1,169 @@
+﻿@model MaintenanceModel
+
+@{
+    Layout = "_Layout_Login";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-lg border-0 rounded-lg">
+                <div class="card-header bg-primary text-white text-center">
+                    <h3 class="mb-0">Make Payment</h3>
+                </div>
+                <div class="card-body">
+                    <h5 class="text-center text-secondary">Maintenance ID: @Model.MaintenanceID</h5>
+                    <hr />
+                    <p><strong>Flat Number:</strong> @Model.FlatNumber</p>
+                    <p><strong>Amount:</strong> <span class="text-success">@Model.Amount</span></p>
+                    <p><strong>Due Date:</strong> @Model.DueDate</p>
+                    <p>
+                        <strong>Payment Status:</strong>
+                        <span class="badge @(Model.PaymentStatus == "Paid" ? "badge-success" : "badge-warning")">
+                            @Model.PaymentStatus
+                        </span>
+                    </p>
+
+                    <!-- Select Payment Method -->
+                    <div class="mb-3">
+                        <label class="form-label"><strong>Select Payment Method</strong></label>
+                        <div class="d-flex flex-column">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="paymentMethod" id="creditCard" value="CreditCard" required>
+                                <label class="form-check-label" for="creditCard">
+                                    <i class="fas fa-credit-card"></i> Credit Card
+                                </label>
+                            </div>
+                           
+                        </div>
+                    </div>
+
+                    <!-- QR Code Scanner -->
+                    <div id="qrScannerSection" class="text-center d-none">
+                        <h5 class="text-primary">Scan to Pay</h5>
+                        <img src="~/Frontend/images/scan.jpg" alt="QR Code" class="img-fluid" width="200" />
+                        <button id="scanComplete" class="btn btn-success mt-3">Scan Completed</button>
+                    </div>
+
+                    <!-- Payment Form -->
+                    <form id="paymentForm" asp-controller="FMaintenance" asp-action="ProcessPayment" method="post" class="mt-4 d-none">
+                        <input type="hidden" name="maintenanceId" value="@Model.MaintenanceID" />
+
+                        <div class="payment-box p-3 shadow rounded bg-light">
+                            <h5 class="text-center text-primary">Enter Payment Details</h5>
+                            <div class="mb-3">
+                                <label class="form-label"><strong>Cardholder Name</strong></label>
+                                <input type="text" class="form-control" name="cardholderName" required />
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label"><strong>Card Number</strong></label>
+                                <input type="text" class="form-control" name="cardNumber" required />
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label"><strong>Expiration Date</strong></label>
+                                    <input type="text" class="form-control" placeholder="MM/YY" required />
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label"><strong>CVV</strong></label>
+                                    <input type="text" class="form-control" required />
+                                </div>
+                            </div>
+
+                            <button type="submit"   class="btn btn-success w-100">
+                                <i class="fas fa-check-circle"></i> Confirm Payment
+                            </button>
+                        </div>
+                    </form>
+
+                    <!-- Make Payment Button (Initially Hidden) -->
+                    <button type="submit" id="makePaymentBtn"  class="btn btn-primary btn-lg w-100 mt-3 d-none">
+                        <i class="fas fa-money-bill-wave"></i> Make Payment
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript for Payment Flow -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    document.querySelectorAll("input[name='paymentMethod']").forEach((radio) => {
+        radio.addEventListener("change", function () {
+            document.getElementById("paymentForm").classList.add("d-none");
+            document.getElementById("qrScannerSection").classList.add("d-none");
+            document.getElementById("makePaymentBtn").classList.add("d-none");
+
+            if (this.value === "CreditCard" || this.value === "DebitCard") {
+                document.getElementById("paymentForm").classList.remove("d-none");
+            } else if (this.value === "GooglePay") {
+                Swal.fire({
+                    title: "Redirecting to Google Pay...",
+                    text: "Please complete the payment on Google Pay.",
+                    icon: "info",
+                    showConfirmButton: false,
+                    timer: 3000
+                }).then(() => {
+                    window.location.href = "/FMaintenance/FMaintenanceList";
+                });
+            } else if (this.value === "QRScan") {
+                document.getElementById("qrScannerSection").classList.remove("d-none");
+            }
+        });
+    });
+
+    // Show "Make Payment" button after scanning
+    document.getElementById("scanComplete").addEventListener("click", function () {
+        Swal.fire({
+            title: "Scan Completed!",
+            text: "Now you can proceed with the payment.",
+            icon: "success",
+            confirmButtonText: "OK"
+        }).then(() => {
+            document.getElementById("makePaymentBtn").classList.remove("d-none");
+        });
+    });
+
+    // Handle "Make Payment" button
+    document.getElementById("makePaymentBtn").addEventListener("click", function () {
+        Swal.fire({
+            title: "Payment Successful!",
+            text: "Your payment has been processed successfully.",
+            icon: "success",
+            confirmButtonText: "OK"
+        }).then(() => {
+            window.location.href = "/FMaintenance/FMaintenanceList";
+        });
+    });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Payment form submission with SweetAlert confirmation
+        document.getElementById("paymentForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent default form submission
+
+            Swal.fire({
+                title: "Confirm Payment",
+                text: "Are you sure you want to proceed with the payment?",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonText: "Yes, Pay Now",
+                cancelButtonText: "Cancel"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    // Submit the form programmatically after confirmation
+                    document.getElementById("paymentForm").submit();
+                }
+            });
+        });
+    });
+</script>
+
+
+
+<!-- Include Bootstrap & FontAwesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">

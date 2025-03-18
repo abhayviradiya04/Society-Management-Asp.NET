@@ -1,0 +1,164 @@
+﻿@model IEnumerable<SocietyMangement.Models.VisitorModel>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <!-- Heading -->
+        <h1>Visitor List</h1>
+
+        <!-- Dropdown Filter -->
+        <div class="col-md-3">
+            <select id="entryTimeFilter" class="form-control" onchange="filterByEntryTime()">
+                <option value="">-- Select Entry Time --</option>
+                <option value="all">All</option>
+                <option value="today">Today</option>
+                <option value="lastWeek">Last Week</option>
+                <option value="lastTwoWeeks">Last Two Weeks</option>
+            </select>
+        </div>
+
+        <!-- ADD Button -->
+        <div>
+            <a asp-controller="Visitor" asp-action="VisitorAddEdit" class="btn btn-primary">ADD</a>
+        </div>
+    </div>
+</div>
+
+
+
+<br />
+<h5 class="text-danger">@TempData["ErrorMessage"]</h5>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Visitor ID</th>
+            <th>Visitor Name</th>
+            <th>Phone Number</th>
+            <th>Whom to Meet</th>
+            <th>Flat Type</th>
+            <th>Flat Number</th>
+            <th>Visit Purpose</th>
+            <th>Entry Time</th>
+            <th>Exit Time</th>
+            <th>Status</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody id="visitorTableBody">
+        @foreach (var visitor in Model)
+        {
+            <tr>
+                <td>@visitor.VisitorID</td>
+                <td>@visitor.VisitorName</td>
+                <td>@visitor.PhoneNumber</td>
+                <td>@visitor.WhomToMeet</td>
+                <td>@visitor.FlatType</td>
+                <td>@visitor.FlatNumber</td>
+                <td>@visitor.VisitPurpose</td>
+                <td>@visitor.EntryTime.ToString("g")</td>
+                <td>@visitor.ExitTime</td>
+                <td>@visitor.Status</td>
+                <td>
+                    <form method="post" asp-controller="Visitor" asp-action="VisitorAddEdit">
+                        <input type="hidden" name="VisitorID" value="@visitor.VisitorID" />
+                        <button type="submit" class="btn btn-outline-success btn-xs">
+                            <i class="ri-edit-2-line" style="font-size: 24px; color: blue;"></i>
+                        </button>
+                    </form>
+                </td>
+                <td>
+                    <form method="post" asp-controller="Visitor" asp-action="Delete" class="delete-form">
+                        <input type="hidden" name="VisitorID" value="@visitor.VisitorID" />
+                        <button type="button" class="btn btn-outline-danger btn-xs delete-button">
+                            <i class="ri-delete-bin-6-line" style="font-size: 24px; color: red;"></i>
+                        </button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".delete-button").forEach(button => {
+            button.addEventListener("click", function (e) {
+                e.preventDefault();
+                const form = this.closest(".delete-form");
+                Swal.fire({
+                    title: 'Are you sure?',
+                    text: "You won't be able to revert this!",
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Yes, delete it!'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        form.submit();
+                    }
+                });
+            });
+        });
+    });
+
+    async function filterByEntryTime() {
+        const filterValue = document.getElementById("entryTimeFilter").value;
+        try {
+            const response = await fetch(`https://localhost:7057/api/Visitor/GetVisitorsByEntryTime?filter=${encodeURIComponent(filterValue)}`, {
+                method: "GET",
+                headers: { "Accept": "application/json" }
+            });
+
+            if (!response.ok) throw new Error(`Error: ${response.status} - ${response.statusText}`);
+
+            const visitors = await response.json();
+            const visitorTableBody = document.getElementById("visitorTableBody");
+            visitorTableBody.innerHTML = "";
+
+            if (visitors.length === 0) {
+                visitorTableBody.innerHTML = "<tr><td colspan='12' class='text-center'>No visitors found</td></tr>";
+                return;
+            }
+
+            visitors.forEach(visitor => {
+                const row = `<tr>
+                            <td>${visitor.visitorID}</td>
+                            <td>${visitor.visitorName}</td>
+                            <td>${visitor.phoneNumber}</td>
+                            <td>${visitor.whomToMeet}</td>
+                            <td>${visitor.flatType}</td>
+                            <td>${visitor.flatNumber}</td>
+                            <td>${visitor.visitPurpose}</td>
+                            <td>${new Date(visitor.entryTime).toLocaleString()}</td>
+                            <td>${visitor.exitTime ? new Date(visitor.exitTime).toLocaleString() : ""}</td>
+                            <td>${visitor.status}</td>
+                            <td>
+                                <form method="post" action="/Visitor/VisitorAddEdit">
+                                    <input type="hidden" name="VisitorID" value="${visitor.visitorID}" />
+                                    <button type="submit" class="btn btn-outline-success btn-xs">
+                                        <i class="ri-edit-2-line" style="font-size: 24px; color: blue;"></i>
+                                    </button>
+                                </form>
+                            </td>
+                            <td>
+                                <form method="post" action="/Visitor/Delete" class="delete-form">
+                                    <input type="hidden" name="VisitorID" value="${visitor.visitorID}" />
+                                    <button type="button" class="btn btn-outline-danger btn-xs delete-button">
+                                        <i class="ri-delete-bin-6-line" style="font-size: 24px; color: red;"></i>
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>`;
+                visitorTableBody.innerHTML += row;
+            });
+        } catch (error) {
+            console.error("Fetch Error:", error);
+            alert("An error occurred while fetching data.");
+        }
+    }
+</script>

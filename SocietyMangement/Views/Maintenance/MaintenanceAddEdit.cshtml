@@ -1,0 +1,148 @@
+﻿@model SocietyMangement.Models.MaintenanceModel
+
+<h2>Add/Edit Maintenance</h2>
+<section class="section">
+    <div class="row">
+        <div class="col-lg">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Maintenance Form</h5>
+
+                    <form asp-action="MaintenanceSave" method="post">
+                        <input type="hidden" asp-for="MaintenanceID" />
+
+                        <!-- Flat Number Dropdown -->
+                        <div class="mb-3">
+                            <label asp-for="FlatID" class="form-label">FlatNumber</label>
+                            <select asp-for="FlatID"
+                                    asp-items="@(new SelectList(ViewBag.FlatNumber, "FlatID", "FlatNumber"))"
+                                    class="form-control">
+                                <option value="">Select Flat</option>
+                            </select>
+                            <span asp-validation-for="FlatID" class="text-danger"></span>
+                        </div>
+
+                        <!-- User Dropdown (populated via AJAX) -->
+                        <!-- User Dropdown (populated via AJAX) -->
+                        <div class="mb-3">
+                            <label asp-for="UserID" class="form-label">User</label>
+                            <select id="UserID"
+                                    name="UserID"
+                                    class="form-control"
+                                    asp-for="UserID">
+                                <option value="">Select User</option>
+                                @if (ViewBag.UserName != null)
+                                {
+                                    <option value="@Model.UserID" selected>@ViewBag.UserName</option>
+                                }
+                            </select>
+                            <span asp-validation-for="UserID" class="text-danger"></span>
+                        </div>
+
+
+                        <!-- Amount Field -->
+                        <div class="row mb-3">
+                            <label asp-for="Amount" class="col-sm-2 col-form-label">Amount</label>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control" asp-for="Amount" placeholder="Enter Amount" step="0.01">
+                                <span asp-validation-for="Amount" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <!-- Due Date -->
+                        <div class="row mb-3">
+                            <label asp-for="DueDate" class="col-sm-2 col-form-label">Due Date</label>
+                            <div class="col-sm-10">
+                                <input type="datetime-local" class="form-control" asp-for="DueDate">
+                                <span asp-validation-for="DueDate" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <!-- Payment Status -->
+                        <div class="row mb-3">
+                            <label asp-for="PaymentStatus" class="col-sm-2 col-form-label">Payment Status</label>
+                            <div class="col-sm-10">
+                                <select class="form-control" asp-for="PaymentStatus">
+                                    <option value="Pending" selected>Pending</option>
+                                    <option value="Paid">Paid</option>
+                                </select>
+                                <span asp-validation-for="PaymentStatus" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <!-- Paid Date -->
+                        <div class="row mb-3">
+                            <label asp-for="PaidDate" class="col-sm-2 col-form-label">Paid Date</label>
+                            <div class="col-sm-10">
+                                <input type="datetime-local" class="form-control" asp-for="PaidDate">
+                                <span asp-validation-for="PaidDate" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <!-- Notes -->
+                        <div class="row mb-3">
+                            <label asp-for="Notes" class="col-sm-2 col-form-label">Notes</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" asp-for="Notes" placeholder="Enter Notes"></textarea>
+                                <span asp-validation-for="Notes" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <!-- Submit and Cancel buttons -->
+                        <div class="row mb-3">
+                            <center>
+                                <div class="col-sm-5">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                    <a asp-action="MaintenanceList" asp-controller="Maintenance">
+                                        <button type="button" class="btn btn-danger">Cancel</button>
+                                    </a>
+                                </div>
+                            </center>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            function loadUsersByFlatID() {
+                var flatID = $("#FlatID").val();
+                if (flatID) {
+                    $.ajax({
+                        url: '@Url.Action("GetUserNameByFlatID", "Maintenance")',
+                        type: "POST",
+                        data: { FlatID: flatID },
+                        success: function (data) {
+                            $("#UserID").empty().append('<option value="">Select User</option>');
+                            $.each(data, function (i, user) {
+                                $("#UserID").append(
+                                    '<option value="' + user.userID + '">' + user.userName + '</option>'
+                                );
+                            });
+                        },
+                        error: function (xhr, status, error) {
+                            console.error("Error fetching users:", error);
+                        }
+                    });
+                } else {
+                    $("#UserID").empty().append('<option value="">Select User</option>');
+                }
+            }
+
+            // Trigger on FlatID change
+            $("#FlatID").change(function () {
+                loadUsersByFlatID();
+            });
+
+            // Call function on page load if FlatID has a value
+            loadUsersByFlatID();
+        });
+    </script>
+}
+

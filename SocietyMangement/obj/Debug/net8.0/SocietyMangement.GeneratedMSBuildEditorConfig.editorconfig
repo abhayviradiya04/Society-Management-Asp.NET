@@ -1,0 +1,163 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = SocietyMangement
+build_property.RootNamespace = SocietyMangement
+build_property.ProjectDir = C:\Users\Abhay\Downloads\Project\Project\SocietyMangement\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Abhay\Downloads\Project\Project\SocietyMangement
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Abhay/Downloads/Project/Project/SocietyMangement/Views/Contact/ContactAddEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxDb250YWN0QWRkRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abhay/Downloads/Project/Project/SocietyMangement/Views/Contact/ContactList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxDb250YWN0TGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abhay/Downloads/Project/Project/SocietyMangement/Views/Event/EventAddEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRcRXZlbnRBZGRFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abhay/Downloads/Project/Project/SocietyMangement/Views/Event/EventList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRcRXZlbnRMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abhay/Downloads/Project/Project/SocietyMangement/Views/FAbout/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRkFib3V0XEFib3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abhay/Downloads/Project/Project/SocietyMangement/Views/FContact/FContact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRkNvbnRhY3RcRkNvbnRhY3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abhay/Downloads/Project/Project/SocietyMangement/Views/FEvent/FEventList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRkV2ZW50XEZFdmVudExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abhay/Downloads/Project/Project/SocietyMangement/Views/Flat/FlatAddEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxhdFxGbGF0QWRkRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abhay/Downloads/Project/Project/SocietyMangement/Views/Flat/FlatList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxhdFxGbGF0TGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abhay/Downloads/Project/Project/SocietyMangement/Views/FMaintenance/FMaintenanceList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRk1haW50ZW5hbmNlXEZNYWludGVuYW5jZUxpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abhay/Downloads/Project/Project/SocietyMangement/Views/FMaintenance/MakePayment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRk1haW50ZW5hbmNlXE1ha2VQYXltZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abhay/Downloads/Project/Project/SocietyMangement/Views/FMeeting/FMeetingList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRk1lZXRpbmdcRk1lZXRpbmdMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abhay/Downloads/Project/Project/SocietyMangement/Views/FNotice/FNoticeList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRk5vdGljZVxGTm90aWNlTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abhay/Downloads/Project/Project/SocietyMangement/Views/Gallary/GallaryList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FsbGFyeVxHYWxsYXJ5TGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abhay/Downloads/Project/Project/SocietyMangement/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abhay/Downloads/Project/Project/SocietyMangement/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abhay/Downloads/Project/Project/SocietyMangement/Views/Maintenance/MaintenanceAddEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbnRlbmFuY2VcTWFpbnRlbmFuY2VBZGRFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abhay/Downloads/Project/Project/SocietyMangement/Views/Maintenance/MaintenanceList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbnRlbmFuY2VcTWFpbnRlbmFuY2VMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abhay/Downloads/Project/Project/SocietyMangement/Views/Meeting/MeetingAddEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVldGluZ1xNZWV0aW5nQWRkRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abhay/Downloads/Project/Project/SocietyMangement/Views/Meeting/MeetingList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVldGluZ1xNZWV0aW5nTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abhay/Downloads/Project/Project/SocietyMangement/Views/NoticeBoard/NoticeAddEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWNlQm9hcmRcTm90aWNlQWRkRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abhay/Downloads/Project/Project/SocietyMangement/Views/NoticeBoard/NoticeList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWNlQm9hcmRcTm90aWNlTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abhay/Downloads/Project/Project/SocietyMangement/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abhay/Downloads/Project/Project/SocietyMangement/Views/Shared/_Layout_Frontend.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRfRnJvbnRlbmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abhay/Downloads/Project/Project/SocietyMangement/Views/Shared/_Layout_Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRfTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abhay/Downloads/Project/Project/SocietyMangement/Views/Shared/_Layout_Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRfUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abhay/Downloads/Project/Project/SocietyMangement/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abhay/Downloads/Project/Project/SocietyMangement/Views/User/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abhay/Downloads/Project/Project/SocietyMangement/Views/User/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abhay/Downloads/Project/Project/SocietyMangement/Views/User/UserAddEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2VyQWRkRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abhay/Downloads/Project/Project/SocietyMangement/Views/User/UserList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2VyTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abhay/Downloads/Project/Project/SocietyMangement/Views/Visitor/VisitorAddEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlzaXRvclxWaXNpdG9yQWRkRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abhay/Downloads/Project/Project/SocietyMangement/Views/Visitor/VisitorList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlzaXRvclxWaXNpdG9yTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abhay/Downloads/Project/Project/SocietyMangement/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abhay/Downloads/Project/Project/SocietyMangement/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abhay/Downloads/Project/Project/SocietyMangement/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-fu151u7vay

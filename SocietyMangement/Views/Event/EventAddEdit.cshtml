@@ -1,0 +1,113 @@
+﻿@model SocietyMangement.Models.EventModel
+
+<h2>Add/Edit Event</h2>
+<section class="section">
+    <div class="row">
+        <div class="col-lg">
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Event Form</h5>
+
+                    <form asp-action="EventSave" method="post">
+                        <input type="hidden" asp-for="EventID" />
+
+                        <div class="row mb-3">
+                            <label asp-for="EventTitle" class="col-sm-2 col-form-label">Title</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" asp-for="EventTitle" placeholder="Enter Title">
+                                <span asp-validation-for="EventTitle" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label asp-for="Description" class="col-sm-2 col-form-label">Description</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" asp-for="Description" placeholder="Enter Description" rows="3"></textarea>
+                                <span asp-validation-for="Description" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <!-- Replace OrganizerName with OrganizerID -->
+                        <div class="row mb-3">
+                            <label asp-for="OrganizerID" class="col-sm-2 col-form-label">Organizer</label>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control" asp-for="OrganizerID" placeholder="Enter Organizer ID">
+                                <span asp-validation-for="OrganizerID" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label asp-for="StartDateTime" class="col-sm-2 col-form-label">Start Date</label>
+                            <div class="col-sm-10">
+                                <input type="datetime-local" class="form-control" asp-for="StartDateTime">
+                                <span asp-validation-for="StartDateTime" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label asp-for="EndDateTime" class="col-sm-2 col-form-label">End Date</label>
+                            <div class="col-sm-10">
+                                <input type="datetime-local" class="form-control" asp-for="EndDateTime">
+                                <span asp-validation-for="EndDateTime" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label asp-for="Location" class="col-sm-2 col-form-label">Location</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" asp-for="Location" placeholder="Enter Location">
+                                <span asp-validation-for="Location" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label asp-for="Status" class="col-sm-2 col-form-label">Status</label>
+                            <div class="col-sm-10">
+                                <select id="Status" asp-for="Status" class="form-control">
+                                    <option value="Active">Active</option>
+                                    <option value="Completed">Completed</option>
+                                    <option value="Cancelled">Cancelled</option>
+                                </select>
+                                <span asp-validation-for="Status" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label asp-for="EventImage" class="col-sm-2 col-form-label">Event Image</label>
+                            <div class="col-sm-10">
+                                <!-- Text input for Event Image URL -->
+                                <input type="text" class="form-control" asp-for="EventImage" placeholder="Enter the image URL" />
+
+                                <!-- Preview the image if the URL is provided -->
+                                @if (!string.IsNullOrEmpty(Model.EventImage))
+                                {
+                                    <img src="@Model.EventImage" alt="Event Image" style="max-width: 200px; margin-top: 10px;" />
+                                }
+
+                                <span asp-validation-for="EventImage" class="text-danger"></span>
+                            </div>
+                        </div>
+
+
+
+                        <div class="row mb-3">
+                            <center>
+                                <div class="col-sm-5">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                    <a asp-action="EventList" asp-controller="Event">
+                                        <button type="button" class="btn btn-danger">Cancel</button>
+                                    </a>
+                                </div>
+                            </center>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>

@@ -1,0 +1,94 @@
+﻿@model SocietyMangement.Models.MeetingModel
+
+<h2>Add/Edit Meeting</h2>
+<section class="section">
+    <div class="row">
+        <div class="col-lg">
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Meeting Form</h5>
+
+                    <form asp-action="MeetingSave" method="post">
+                        <input type="hidden" asp-for="MeetingID" />
+
+                        <div class="row mb-3">
+                            <label asp-for="MeetingTitle" class="col-sm-2 col-form-label">Meeting Title</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" asp-for="MeetingTitle" placeholder="Enter Meeting Title">
+                                <span asp-validation-for="MeetingTitle" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label asp-for="Description" class="col-sm-2 col-form-label">Description</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" asp-for="Description" placeholder="Enter Description"></textarea>
+                                <span asp-validation-for="Description" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label asp-for="OrganizerID" class="col-sm-2 col-form-label">Organizer ID</label>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control" asp-for="OrganizerID" placeholder="Enter Organizer ID">
+                                <span asp-validation-for="OrganizerID" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label asp-for="StartDateTime" class="col-sm-2 col-form-label">Start Date & Time</label>
+                            <div class="col-sm-10">
+                                <input type="datetime-local" class="form-control" asp-for="StartDateTime">
+                                <span asp-validation-for="StartDateTime" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label asp-for="EndDateTime" class="col-sm-2 col-form-label">End Date & Time</label>
+                            <div class="col-sm-10">
+                                <input type="datetime-local" class="form-control" asp-for="EndDateTime">
+                                <span asp-validation-for="EndDateTime" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label asp-for="Location" class="col-sm-2 col-form-label">Location</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" asp-for="Location" placeholder="Enter Location">
+                                <span asp-validation-for="Location" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label asp-for="Status" class="col-sm-2 col-form-label">Status</label>
+                            <div class="col-sm-10">
+                                <select class="form-control" asp-for="Status">
+                                    <option value="Scheduled">Scheduled</option>
+                                    <option value="Completed">Completed</option>
+                                    <option value="Cancelled">Cancelled</option>
+                                </select>
+                                <span asp-validation-for="Status" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <center>
+                                <div class="col-sm-5">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                    <a asp-action="MeetingList" asp-controller="Meeting">
+                                        <button type="button" class="btn btn-danger">Cancel</button>
+                                    </a>
+                                </div>
+                            </center>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>

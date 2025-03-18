@@ -1,0 +1,71 @@
+﻿@model SocietyMangement.Models.FlatModel
+
+<h2>Add/Edit Flat</h2>
+<section class="section">
+    <div class="row">
+        <div class="col-lg">
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Flat Form</h5>
+
+                    <form asp-action="FlatSave" method="post">
+                        <input type="hidden" asp-for="FlatID" />
+
+                        <div class="row mb-3">
+                            <label asp-for="FlatNumber" class="col-sm-2 col-form-label">Flat Number</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" asp-for="FlatNumber" placeholder="Enter Flat Number">
+                                <span asp-validation-for="FlatNumber" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label asp-for="FlatTypeID" class="col-sm-2 col-form-label">Flat TypeID</label>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control" asp-for="FlatTypeID" placeholder="Enter FlatTypeID">
+                              @*   <select asp-for="FlatTypeID" class="form-control">
+                                    <option value="2BHK">2BHK</option>
+                                    <option value="3BHK">3BHK</option>
+                                    <option value="4BHK">4BHK</option>
+                                </select> *@
+                                <span asp-validation-for="FlatTypeID" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label asp-for="FloorNumber" class="col-sm-2 col-form-label">Floor Number</label>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control" asp-for="FloorNumber" placeholder="Enter Floor Number">
+                                <span asp-validation-for="FloorNumber" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label asp-for="Block" class="col-sm-2 col-form-label">Block</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" asp-for="Block" placeholder="Enter Block">
+                                <span asp-validation-for="Block" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <center>
+                                <div class="col-sm-5">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                    <a asp-action="FlatList" asp-controller="Flat">
+                                        <button type="button" class="btn btn-danger">Cancel</button>
+                                    </a>
+                                </div>
+                            </center>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>

@@ -1,0 +1,129 @@
+﻿@{
+    Layout = "_Layout_Frontend";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Society Management</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Custom CSS -->
+</head>
+<body>
+
+    <div class="hero page-inner overlay" style="background-image: url('../Frontend/images/hero_bg_1.jpg')">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-9 text-center mt-5">
+                    <h1 class="heading" data-aos="fade-up">Welcome to Society Management</h1>
+                    <p class="lead">Efficiently manage residents, meetings, maintenance, and events with our platform.</p>
+                    <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="200">
+                        <ol class="breadcrumb text-center justify-content-center">
+                            <li class="breadcrumb-item"><a asp-controller="Gallary" asp-action="GallaryList">Home</a></li>
+                            <li class="breadcrumb-item active text-white-50" aria-current="page">About Page</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+  
+
+    <!-- About Us Section -->
+    <section class="about-section py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="fw-bold" data-aos="fade-up">About Our Platform</h2>
+            <p class="lead" data-aos="fade-up" data-aos-delay="200">Our platform provides an all-in-one solution for managing societies with transparency and efficiency.</p>
+            <div class="row mt-5">
+                <div class="col-md-4" data-aos="fade-right">
+                    <div class="card p-4 shadow-lg">
+                        <h4>Resident Management</h4>
+                        <p>Track residents' details including flats, roles, and contact information.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="card p-4 shadow-lg">
+                        <h4>Maintenance Tracking</h4>
+                        <p>Monitor maintenance schedules, payments, and updates efficiently.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-left">
+                    <div class="card p-4 shadow-lg">
+                        <h4>Event & Meeting Management</h4>
+                        <p>Organize society events, meetings, and send notifications to residents.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features Section -->
+    <section class="features-section py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold" data-aos="fade-up">Key Features</h2>
+            <div class="row mt-4">
+                <div class="col-md-3" data-aos="zoom-in">
+                    <h4>Real-Time Notifications</h4>
+                    <p>Stay updated with instant alerts for meetings, maintenance, and events.</p>
+                </div>
+                <div class="col-md-3" data-aos="zoom-in" data-aos-delay="200">
+                    <h4>Secure Data</h4>
+                    <p>All information is securely stored and accessible only to authorized members.</p>
+                </div>
+                <div class="col-md-3" data-aos="zoom-in" data-aos-delay="400">
+                    <h4>Easy Communication</h4>
+                    <p>Seamless interaction between residents, admins, and security personnel.</p>
+                </div>
+                <div class="col-md-3" data-aos="zoom-in" data-aos-delay="600">
+                    <h4>Location-Based Assistance</h4>
+                    <p>Find essential services and nearby amenities within your society.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet the Team -->
+    <section class="team-section py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="fw-bold" data-aos="fade-up">Meet Our Team</h2>
+            <div class="row mt-4">
+                <div class="col-md-4" data-aos="flip-left">
+                    <img src="~/Frontend/images/Prince.jpg" class="rounded-circle mb-3" width="150" height="150">
+                    <h5>Prince Malaviya</h5>
+                    <p>Admin & Founder</p>
+                </div>
+                <div class="col-md-4" data-aos="flip-up">
+                    <img src="~/Frontend/images/person_1-min.jpg" class="rounded-circle mb-3" width="150" height="150">
+                    <h5>Alice Smith</h5>
+                    <p>UX Designer</p>
+                </div>
+                <div class="col-md-4" data-aos="flip-right">
+                    <img src="~/Frontend/images/person_3-min.jpg" class="rounded-circle mb-3" width="150" height="150">
+                    <h5>Bob Johnson</h5>
+                    <p>Security Head</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact-section py-5 text-white text-center" style="background: linear-gradient(90deg, #0a3d62, #1e3799);">
+        <div class="container">
+            <h2 class="fw-bold" data-aos="fade-up">Contact Us</h2>
+            <p data-aos="fade-up" data-aos-delay="200">Need help? Reach out to us for any assistance.</p>
+            <a href="contact.html" class="btn btn-light mt-3" data-aos="fade-up" data-aos-delay="400">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

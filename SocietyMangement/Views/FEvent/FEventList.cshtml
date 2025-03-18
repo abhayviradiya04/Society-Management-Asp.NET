@@ -1,0 +1,210 @@
+﻿@{
+    Layout = "_Layout_Frontend";
+}
+
+<div class="hero page-inner overlay" style="background-image: url('../Frontend/images/hero_bg_1.jpg')">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-9 text-center mt-5">
+                <h1 class="heading" data-aos="fade-up">Events</h1>
+                <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="200">
+                    <ol class="breadcrumb text-center justify-content-center">
+                        <li class="breadcrumb-item"><a asp-controller="Gallary" asp-action="GallaryList">Home</a></li>
+                        <li class="breadcrumb-item active text-white-50" aria-current="page">Events</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Search Input -->
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-4">
+            <input type="text" id="searchInput" class="form-control search-box" placeholder="Enter search keyword...">
+        </div>
+    </div>
+</div>
+
+<div class="container mt-4">
+    <div class="row" id="eventContainer">
+        @foreach (var eventItem in Model)
+        {
+            <div class="col-md-4 mb-4 event-card">
+                <div class="card shadow-sm h-100 animate-card">
+                    <!-- Event Image -->
+                    <div class="card-img-container">
+                        <img src="@eventItem.EventImage" alt="@eventItem.EventTitle" class="card-img-top" style="height: 250px; object-fit: cover;">
+                    </div>
+
+                    <div class="card-body d-flex flex-column">
+                        <!-- Event Title -->
+                        <h5 class="card-title text-primary event-title">@eventItem.EventTitle</h5>
+
+                        <!-- Event Description -->
+                        <p class="card-text text-muted" style="flex-grow: 1;">@eventItem.Description</p>
+
+                        <!-- Event Details -->
+                        <p class="card-text mb-2">
+                            <strong class="text-success">Start:</strong>
+                            <span class="text-dark">@eventItem.StartDateTime.ToString("f")</span>
+                        </p>
+                        <p class="card-text mb-2">
+                            <strong class="text-danger">End:</strong>
+                            <span class="text-dark">@eventItem.EndDateTime.ToString("f")</span>
+                        </p>
+                        <p class="card-text mb-2">
+                            <strong class="text-info">Location:</strong>
+                            <span class="text-dark">@eventItem.Location</span>
+                        </p>
+
+                        <!-- Status -->
+                        <p class="card-text mt-3">
+                            <strong>Status:</strong>
+                            <span class="status-label @(eventItem.Status == "Active" ? "active-status" : eventItem.Status == "Completed" ? "completed-status" : "default-status")">
+                                @eventItem.Status
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<!-- JavaScript for Search Filter -->
+<script>
+    document.getElementById("searchInput").addEventListener("keyup", function () {
+        let searchValue = this.value.toLowerCase();
+        let eventCards = document.querySelectorAll(".event-card");
+
+        eventCards.forEach(card => {
+            let title = card.querySelector(".event-title").innerText.toLowerCase();
+            if (title.includes(searchValue)) {
+                card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
+        });
+    });
+</script>
+
+<!-- Additional CSS for Search Box Alignment -->
+<style>
+    .search-box {
+        width: 100%;
+        border-radius: 8px;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+        .search-box:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
+        }
+</style>
+
+<!-- CSS for Highlighted Details and Animations -->
+<style>
+    /* Card styles */
+    .card {
+        border-radius: 15px;
+        overflow: hidden;
+        transition: transform 0.3s, box-shadow 0.3s ease, background-color 0.3s;
+        cursor: pointer;
+        border: none;
+    }
+
+    .card:hover {
+        transform: translateY(-8px) scale(1.05);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+        background-color: #f8f9fa;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #343a40;
+    }
+
+    .card-text {
+        font-size: 0.95rem;
+        color: #6c757d;
+    }
+
+    .card-text strong {
+        font-weight: bold;
+    }
+
+    .card-text span {
+        font-size: 0.95rem;
+    }
+
+    /* Animation on load */
+    .animate-card {
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeInUp 0.8s ease-in-out forwards;
+    }
+
+    /* Keyframes for fade-in animation */
+    @@keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Status Label Colors */
+    .status-label {
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .active-status {
+        background-color: #28a745;
+        color: white;
+    }
+
+    .completed-status {
+        background-color: #dc3545;
+        color: white;
+    }
+
+    .default-status {
+        background-color: #6c757d;
+        color: white;
+    }
+
+    /* Responsive Styles */
+    @@media (max-width: 768px) {
+        .card-body {
+            padding: 15px;
+        }
+    }
+
+    /* Cursor animation on hover */
+    .card:hover {
+        cursor: url('https://cdn-icons-png.flaticon.com/512/32/32339.png'), pointer;
+    }
+</style>
+
+
+
+
+
+
+
+

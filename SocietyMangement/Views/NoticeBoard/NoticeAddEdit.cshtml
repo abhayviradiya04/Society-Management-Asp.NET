@@ -1,0 +1,97 @@
+﻿@model SocietyMangement.Models.NoticeBoardModel
+
+<h2>Add/Edit Notice</h2>
+<section class="section">
+    <div class="row">
+        <div class="col-lg">
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Notice Form</h5>
+
+                    <form asp-action="NoticeSave" method="post">
+                        <input type="hidden" asp-for="NoticeID" />
+
+                        <div class="row mb-3">
+                            <label asp-for="Title" class="col-sm-2 col-form-label">Title</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" asp-for="Title" placeholder="Enter Title">
+                                <span asp-validation-for="Title" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label asp-for="Description" class="col-sm-2 col-form-label">Description</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" asp-for="Description" placeholder="Enter Description" rows="3"></textarea>
+                                <span asp-validation-for="Description" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label asp-for="PostedBy" class="col-sm-2 col-form-label">Posted By</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" asp-for="PostedBy" placeholder="Enter Posted By">
+                                <span asp-validation-for="PostedBy" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label asp-for="PostingDate" class="col-sm-2 col-form-label">Posting Date</label>
+                            <div class="col-sm-10">
+                                <input type="datetime-local" class="form-control" asp-for="PostingDate">
+                                <span asp-validation-for="PostingDate" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label asp-for="ExpirationDate" class="col-sm-2 col-form-label">Expiration Date</label>
+                            <div class="col-sm-10">
+                                <input type="datetime-local" class="form-control" asp-for="ExpirationDate">
+                                <span asp-validation-for="ExpirationDate" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label for="Visibility" class="col-sm-2 col-form-label">Visibility</label>
+                            <div class="col-sm-10">
+                                <select id="Visibility" asp-for="Visibility" class="form-control">
+                                    <option value="All">All</option>
+                                    <option value="Members">Members</option>
+                                    <option value="Admins">Admins</option>
+                                </select>
+                                <span asp-validation-for="Visibility" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label for="Status" class="col-sm-2 col-form-label">Status</label>
+                            <div class="col-sm-10">
+                                <select id="Status" asp-for="Status" class="form-control">
+                                    <option value="Active">Active</option>
+                                    <option value="Inactive">Inactive</option>
+                                </select>
+                                <span asp-validation-for="Status" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <center>
+                                <div class="col-sm-5">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                    <a asp-action="NoticeList" asp-controller="NoticeBoard">
+                                        <button type="button" class="btn btn-danger">Cancel</button>
+                                    </a>
+                                </div>
+                            </center>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>

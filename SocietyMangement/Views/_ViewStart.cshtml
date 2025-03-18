@@ -1,0 +1,22 @@
+﻿@{
+    Layout = "_Layout";
+} 
+
+
+
+@* @inject Microsoft.AspNetCore.Http.IHttpContextAccessor httpcontextaccessor
+
+@{
+    var role = httpcontextaccessor.HttpContext?.Session.GetString("role");
+    Console.WriteLine(httpcontextaccessor + "this is value of role");
+    if (role == "admin")
+    {
+        Layout = "~/views/shared/_layout.cshtml";
+    }
+    else if (role == "resident")
+    {
+        Layout = "~/views/shared/_layout_frontend.cshtml";
+    }
+   
+} *@
+

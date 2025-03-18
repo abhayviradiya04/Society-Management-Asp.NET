@@ -1,0 +1,406 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|c:\\users\\abhay\\downloads\\project\\project\\societymangement\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|c:\\users\\abhay\\downloads\\project\\project\\societymangement\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|c:\\users\\abhay\\downloads\\project\\project\\societymangement\\controllers\\visitorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|solutionrelative:controllers\\visitorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|c:\\users\\abhay\\downloads\\project\\project\\societymangement\\models\\homemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|solutionrelative:models\\homemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|c:\\users\\abhay\\downloads\\project\\project\\societymangement\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|c:\\users\\abhay\\downloads\\project\\project\\societymangement\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|c:\\users\\abhay\\downloads\\project\\project\\societymangement\\models\\visitormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|solutionrelative:models\\visitormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|c:\\users\\abhay\\downloads\\project\\project\\societymangement\\views\\user\\useraddedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|solutionrelative:views\\user\\useraddedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|c:\\users\\abhay\\downloads\\project\\project\\societymangement\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|solutionrelative:models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|c:\\users\\abhay\\downloads\\project\\project\\societymangement\\views\\visitor\\visitoraddedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|solutionrelative:views\\visitor\\visitoraddedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|c:\\users\\abhay\\downloads\\project\\project\\societymangement\\views\\fmeeting\\fmeetinglist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|solutionrelative:views\\fmeeting\\fmeetinglist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|c:\\users\\abhay\\downloads\\project\\project\\societymangement\\views\\meeting\\meetinglist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|solutionrelative:views\\meeting\\meetinglist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|c:\\users\\abhay\\downloads\\project\\project\\societymangement\\models\\meetingmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|solutionrelative:models\\meetingmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|c:\\users\\abhay\\downloads\\project\\project\\societymangement\\models\\noticeboardmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|solutionrelative:models\\noticeboardmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|c:\\users\\abhay\\downloads\\project\\project\\societymangement\\controllers\\noticeboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|solutionrelative:controllers\\noticeboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|c:\\users\\abhay\\downloads\\project\\project\\societymangement\\views\\event\\eventlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|solutionrelative:views\\event\\eventlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|c:\\users\\abhay\\downloads\\project\\project\\societymangement\\views\\event\\eventaddedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|solutionrelative:views\\event\\eventaddedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|c:\\users\\abhay\\downloads\\project\\project\\societymangement\\models\\eventmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|solutionrelative:models\\eventmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|c:\\users\\abhay\\downloads\\project\\project\\societymangement\\models\\maintenancemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|solutionrelative:models\\maintenancemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|c:\\users\\abhay\\downloads\\project\\project\\societymangement\\views\\maintenance\\maintenanceaddedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|solutionrelative:views\\maintenance\\maintenanceaddedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|c:\\users\\abhay\\downloads\\project\\project\\societymangement\\views\\fmaintenance\\makepayment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|solutionrelative:views\\fmaintenance\\makepayment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|c:\\users\\abhay\\downloads\\project\\project\\societymangement\\views\\maintenance\\maintenancelist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|solutionrelative:views\\maintenance\\maintenancelist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|c:\\users\\abhay\\downloads\\project\\project\\societymangement\\views\\visitor\\visitorlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|solutionrelative:views\\visitor\\visitorlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|c:\\users\\abhay\\downloads\\project\\project\\societymangement\\views\\noticeboard\\noticelist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D96294C6-0113-4C26-A89F-24661D89D734}|SocietyMangement.csproj|solutionrelative:views\\noticeboard\\noticelist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAB+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-18T06:21:34.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AQIAALoAAAAAAAAAAAAswHgBAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T06:12:49.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserAddEdit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Views\\User\\UserAddEdit.cshtml",
+              "RelativeDocumentMoniker": "Views\\User\\UserAddEdit.cshtml",
+              "ToolTip": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Views\\User\\UserAddEdit.cshtml",
+              "RelativeToolTip": "Views\\User\\UserAddEdit.cshtml",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAD4AAABqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-18T11:14:04.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserModel.cs",
+              "DocumentMoniker": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Models\\UserModel.cs",
+              "RelativeDocumentMoniker": "Models\\UserModel.cs",
+              "ToolTip": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Models\\UserModel.cs",
+              "RelativeToolTip": "Models\\UserModel.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAYwBkAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T11:13:34.373Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FMeetingList.cshtml",
+              "DocumentMoniker": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Views\\FMeeting\\FMeetingList.cshtml",
+              "RelativeDocumentMoniker": "Views\\FMeeting\\FMeetingList.cshtml",
+              "ToolTip": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Views\\FMeeting\\FMeetingList.cshtml",
+              "RelativeToolTip": "Views\\FMeeting\\FMeetingList.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAACsAAABjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-18T11:12:19.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "NoticeBoardModel.cs",
+              "DocumentMoniker": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Models\\NoticeBoardModel.cs",
+              "RelativeDocumentMoniker": "Models\\NoticeBoardModel.cs",
+              "ToolTip": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Models\\NoticeBoardModel.cs",
+              "RelativeToolTip": "Models\\NoticeBoardModel.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAA7wBYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T11:09:06.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "NoticeBoardController.cs",
+              "DocumentMoniker": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Controllers\\NoticeBoardController.cs",
+              "RelativeDocumentMoniker": "Controllers\\NoticeBoardController.cs",
+              "ToolTip": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Controllers\\NoticeBoardController.cs",
+              "RelativeToolTip": "Controllers\\NoticeBoardController.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T11:09:03.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MeetingModel.cs",
+              "DocumentMoniker": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Models\\MeetingModel.cs",
+              "RelativeDocumentMoniker": "Models\\MeetingModel.cs",
+              "ToolTip": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Models\\MeetingModel.cs",
+              "RelativeToolTip": "Models\\MeetingModel.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAA/wCAAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T10:36:10.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "EventAddEdit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Views\\Event\\EventAddEdit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Event\\EventAddEdit.cshtml",
+              "ToolTip": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Views\\Event\\EventAddEdit.cshtml",
+              "RelativeToolTip": "Views\\Event\\EventAddEdit.cshtml",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-18T10:34:36.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "EventModel.cs",
+              "DocumentMoniker": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Models\\EventModel.cs",
+              "RelativeDocumentMoniker": "Models\\EventModel.cs",
+              "ToolTip": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Models\\EventModel.cs",
+              "RelativeToolTip": "Models\\EventModel.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAA5wB0AAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T10:33:43.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "MakePayment.cshtml",
+              "DocumentMoniker": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Views\\FMaintenance\\MakePayment.cshtml",
+              "RelativeDocumentMoniker": "Views\\FMaintenance\\MakePayment.cshtml",
+              "ToolTip": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Views\\FMaintenance\\MakePayment.cshtml",
+              "RelativeToolTip": "Views\\FMaintenance\\MakePayment.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAABYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-18T10:26:43.858Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MaintenanceModel.cs",
+              "DocumentMoniker": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Models\\MaintenanceModel.cs",
+              "RelativeDocumentMoniker": "Models\\MaintenanceModel.cs",
+              "ToolTip": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Models\\MaintenanceModel.cs",
+              "RelativeToolTip": "Models\\MaintenanceModel.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAmwBYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T10:24:16.585Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "MaintenanceAddEdit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Views\\Maintenance\\MaintenanceAddEdit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Maintenance\\MaintenanceAddEdit.cshtml",
+              "ToolTip": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Views\\Maintenance\\MaintenanceAddEdit.cshtml",
+              "RelativeToolTip": "Views\\Maintenance\\MaintenanceAddEdit.cshtml",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAFAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-18T10:24:10.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "VisitorList.cshtml",
+              "DocumentMoniker": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Views\\Visitor\\VisitorList.cshtml",
+              "RelativeDocumentMoniker": "Views\\Visitor\\VisitorList.cshtml",
+              "ToolTip": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Views\\Visitor\\VisitorList.cshtml",
+              "RelativeToolTip": "Views\\Visitor\\VisitorList.cshtml",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAEAAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-18T09:58:31.091Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "VisitorAddEdit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Views\\Visitor\\VisitorAddEdit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Visitor\\VisitorAddEdit.cshtml",
+              "ToolTip": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Views\\Visitor\\VisitorAddEdit.cshtml",
+              "RelativeToolTip": "Views\\Visitor\\VisitorAddEdit.cshtml",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAqwFgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-18T06:07:49.64Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "VisitorModel.cs",
+              "DocumentMoniker": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Models\\VisitorModel.cs",
+              "RelativeDocumentMoniker": "Models\\VisitorModel.cs",
+              "ToolTip": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Models\\VisitorModel.cs",
+              "RelativeToolTip": "Models\\VisitorModel.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAqwCEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T06:07:21.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VisitorController.cs",
+              "DocumentMoniker": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Controllers\\VisitorController.cs",
+              "RelativeDocumentMoniker": "Controllers\\VisitorController.cs",
+              "ToolTip": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Controllers\\VisitorController.cs",
+              "RelativeToolTip": "Controllers\\VisitorController.cs",
+              "ViewState": "AQIAAIYAAAAAAAAAAAAiwJcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T15:19:48.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "MaintenanceList.cshtml",
+              "DocumentMoniker": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Views\\Maintenance\\MaintenanceList.cshtml",
+              "RelativeDocumentMoniker": "Views\\Maintenance\\MaintenanceList.cshtml",
+              "ToolTip": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Views\\Maintenance\\MaintenanceList.cshtml",
+              "RelativeToolTip": "Views\\Maintenance\\MaintenanceList.cshtml",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAADkAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-14T13:40:15.537Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "NoticeList.cshtml",
+              "DocumentMoniker": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Views\\NoticeBoard\\NoticeList.cshtml",
+              "RelativeDocumentMoniker": "Views\\NoticeBoard\\NoticeList.cshtml",
+              "ToolTip": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Views\\NoticeBoard\\NoticeList.cshtml",
+              "RelativeToolTip": "Views\\NoticeBoard\\NoticeList.cshtml",
+              "ViewState": "AQIAAGEAAAAAAAAAAAAcwHYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-14T13:38:05.371Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "EventList.cshtml",
+              "DocumentMoniker": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Views\\Event\\EventList.cshtml",
+              "RelativeDocumentMoniker": "Views\\Event\\EventList.cshtml",
+              "ToolTip": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Views\\Event\\EventList.cshtml",
+              "RelativeToolTip": "Views\\Event\\EventList.cshtml",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAADYAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-14T13:35:43.217Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MeetingList.cshtml",
+              "DocumentMoniker": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Views\\Meeting\\MeetingList.cshtml",
+              "RelativeDocumentMoniker": "Views\\Meeting\\MeetingList.cshtml",
+              "ToolTip": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Views\\Meeting\\MeetingList.cshtml",
+              "RelativeToolTip": "Views\\Meeting\\MeetingList.cshtml",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAADIAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-14T13:32:46.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAIwD0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T12:12:41.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeModel.cs",
+              "DocumentMoniker": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Models\\HomeModel.cs",
+              "RelativeDocumentMoniker": "Models\\HomeModel.cs",
+              "ToolTip": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Models\\HomeModel.cs",
+              "RelativeToolTip": "Models\\HomeModel.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAwwBoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T12:12:39.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Abhay\\Downloads\\Project\\Project\\SocietyMangement\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAABABAAAAAAAAAAAiwB0BAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-14T12:12:36.797Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

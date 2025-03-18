@@ -1,0 +1,99 @@
+﻿@{
+    Layout = "_Layout_Frontend";
+}
+
+<div class="hero page-inner overlay" style="background-image: url('../Frontend/images/hero_bg_1.jpg')">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-9 text-center mt-5">
+                <h1 class="heading" data-aos="fade-up">Your Maintenance</h1>
+                <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="200">
+                    <ol class="breadcrumb text-center justify-content-center">
+                        <li class="breadcrumb-item"><a asp-controller="Gallary" asp-action="GallaryList">Home</a></li>
+                        <li class="breadcrumb-item active text-white-50" aria-current="page">Maintenance</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Your Maintenance Details</h2>
+    <div class="row">
+        @foreach (var maintenance in Model)
+        {
+            if (@CommonVariable.UserName() == maintenance.UserName)
+            {
+                <div class="col-lg-6 mb-4">
+                    <div class="card maintenance-card shadow-lg animate__animated animate__fadeInUp">
+                        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                            <h5 class="mb-0">Maintenance ID: @maintenance.MaintenanceID</h5>
+                            <a asp-controller="FMaintenance" asp-action="ExportToExcel" asp-route-maintenanceId="@maintenance.MaintenanceID" class="btn btn-light btn-sm">
+                                <i class="fas fa-file-excel"></i> Download
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <p><strong class="text-primary">Flat Number:</strong> @maintenance.FlatNumber</p>
+                            <p><strong>User Name:</strong> @maintenance.UserName</p>
+                            <p><strong class="text-primary">Amount:</strong> @maintenance.Amount.ToString("C")</p>
+                            <p><strong>Due Date:</strong> @maintenance.DueDate.ToString("d")</p>
+                            <p><strong>Payment Status:</strong> <span class="badge @(maintenance.PaymentStatus == "Paid" ? "bg-success" : "bg-danger")">@maintenance.PaymentStatus</span></p>
+                            <p><strong>Paid Date:</strong> @(maintenance.PaidDate?.ToString("d") ?? "Not Paid")</p>
+                            <p><strong>Notes:</strong> @maintenance.Notes</p>
+                            <p><strong>Created Date:</strong> @maintenance.CreatedDate.ToString("d")</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            @if (maintenance.PaymentStatus == "Pending")
+                            {
+                                <a asp-controller="FMaintenance" asp-action="MakePayment" asp-route-maintenanceId="@maintenance.MaintenanceID" class="btn btn-success w-100">
+                                    <i class="fas fa-credit-card"></i> Pay Now
+                                </a>
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>
+
+<!-- Styles -->
+<style>
+    .maintenance-card {
+        border-radius: 12px;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+
+        .maintenance-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+    .card-header {
+        font-weight: bold;
+        font-size: 1rem;
+    }
+
+    .badge {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+        border-radius: 10px;
+    }
+
+    .btn-success {
+        font-size: 1rem;
+        padding: 10px;
+        border-radius: 8px;
+        font-weight: bold;
+    }
+</style>
+
+<!-- Scripts -->
+<script>
+    function processPayment(maintenanceId) {
+        alert("Payment for Maintenance ID " + maintenanceId + " has been processed successfully!");
+        $('#paymentModal-' + maintenanceId).modal('hide');
+    }
+</script>

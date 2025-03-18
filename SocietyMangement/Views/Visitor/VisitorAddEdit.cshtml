@@ -1,0 +1,185 @@
+﻿@model SocietyMangement.Models.VisitorModel
+
+<h2>Add/Edit Visitor</h2>
+<section class="section">
+    <div class="row">
+        <div class="col-lg">
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Visitor Form</h5>
+
+                    <form asp-action="VisitorSave" method="post">
+                        <input type="hidden" asp-for="VisitorID" />
+
+                        <div class="row mb-3">
+                            <label asp-for="VisitorName" class="col-sm-2 col-form-label">Visitor Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" asp-for="VisitorName" placeholder="Enter Visitor Name">
+                                <span asp-validation-for="VisitorName" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label asp-for="PhoneNumber" class="col-sm-2 col-form-label">Phone Number</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" asp-for="PhoneNumber" placeholder="Enter Phone Number">
+                                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label asp-for="WhomToMeet" class="col-sm-2 col-form-label">Whom to Meet</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" asp-for="WhomToMeet" placeholder="Enter Whom to Meet">
+                                <span asp-validation-for="WhomToMeet" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label for="flatType" class="col-sm-2 col-form-label">Select Flat Type:</label>
+                            <div class="col-sm-10">
+                                <select id="flatType" asp-for="FlatType" class="form-control">
+                                    <option value="">-- Select Flat Type --</option> <!-- Empty value ensures validation triggers -->
+                                    <option value="2BHK">2BHK</option>
+                                    <option value="3BHK">3BHK</option>
+                                    <option value="4BHK">4BHK</option>
+                                </select>
+                                <span asp-validation-for="FlatType" class="text-danger"></span>
+                            </div>
+                        </div>
+
+
+
+                        <div class="row mb-3">
+                            <label for="flat" class="col-sm-2 col-form-label">Select Flat:</label>
+                            <div class="col-sm-10">
+                                <select id="flat" asp-for="FlatNumber" name="FlatNumber" class="form-control">
+                                    <option value="">--Select Flat--</option>
+                                </select>
+                                <span asp-validation-for="FlatNumber" class="text-danger"></span>
+                            </div>
+                        </div>
+
+
+
+                        <div class="row mb-3">
+                            <label asp-for="VisitPurpose" class="col-sm-2 col-form-label">Visit Purpose</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" asp-for="VisitPurpose" placeholder="Enter Visit Purpose">
+                                <span asp-validation-for="VisitPurpose" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label asp-for="EntryTime" class="col-sm-2 col-form-label">Entry Time</label>
+                            <div class="col-sm-10">
+                                <input type="datetime-local" class="form-control" asp-for="EntryTime">
+                                <span asp-validation-for="EntryTime" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label asp-for="ExitTime" class="col-sm-2 col-form-label">Exit Time</label>
+                            <div class="col-sm-10">
+                                <input type="datetime-local" class="form-control" asp-for="ExitTime">
+                                <span asp-validation-for="ExitTime" class="text-danger"></span>
+                            </div>
+                        </div>
+
+
+
+                        <div class="row mb-3">
+                            <center>
+                                <div class="col-sm-5">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                    <a asp-action="VisitorList" asp-controller="Visitor">
+                                        <button type="button" class="btn btn-danger">Cancel</button>
+                                    </a>
+                                </div>
+                            </center>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const flatTypeDropdown = document.getElementById("flatType");
+        const flatDropdown = document.getElementById("flat");
+
+        // Fetch flats by selected flat type
+        async function fetchFlatsByType() {
+            const flatType = flatTypeDropdown.value;
+            flatDropdown.innerHTML = '<option value="">--Select Flat--</option>';
+
+            if (!flatType) {
+                console.warn("⚠️ Flat type not selected.");
+                return;
+            }
+
+            try {
+                console.log(`📡 Fetching flats for: ${flatType}`);
+
+                // Ensure the URL is correct
+                const apiUrl = `https://localhost:7057/api/Visitor/GetFlatsByFlatType?flatTypeName=${encodeURIComponent(flatType)}`;
+                const response = await fetch(apiUrl, {
+                    method: "GET",
+                    headers: {
+                        "Accept": "application/json"
+                    },
+                    mode: "cors"
+                });
+
+                if (!response.ok) {
+                    throw new Error(`❌ API Error: ${response.status} - ${response.statusText}`);
+                }
+
+                const flats = await response.json();
+                console.log("✅ Fetched Flats:", flats);
+
+                if (!Array.isArray(flats) || flats.length === 0) {
+                    console.warn("⚠️ No flats found for this type.");
+                    alert("No flats available for the selected flat type.");
+                    return;
+                }
+
+                flats.forEach(flat => {
+                    const option = document.createElement("option");
+                    option.value = flat.FlatNumber || flat.flatNumber;
+                    option.textContent = flat.FlatNumber || flat.flatNumber;
+                    flatDropdown.appendChild(option);
+                });
+
+                // Set the selected FlatNumber if in edit mode
+                if (modelFlatNumber) {
+                    flatDropdown.value = modelFlatNumber;
+                }
+
+            } catch (error) {
+                console.error("⚠️ Fetch Error:", error);
+                alert("An error occurred while fetching data.");
+            }
+        }
+
+        // Fix: Make function globally accessible
+        window.fetchFlatsByType = fetchFlatsByType;
+
+        // Pre-select values in edit mode
+        const modelFlatType = '@(Model?.FlatType ?? "")';
+        const modelFlatNumber = '@(Model?.FlatNumber ?? "")';
+
+        if (modelFlatType) {
+            flatTypeDropdown.value = modelFlatType;
+            fetchFlatsByType(); // Fetch flats and set selected one
+        }
+
+        flatTypeDropdown.addEventListener("change", fetchFlatsByType);
+    });
+</script>

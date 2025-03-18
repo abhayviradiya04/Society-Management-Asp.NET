@@ -1,0 +1,158 @@
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\appsettings.json
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\SocietyMangementApi.exe
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\SocietyMangementApi.deps.json
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\SocietyMangementApi.runtimeconfig.json
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\SocietyMangementApi.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\SocietyMangementApi.pdb
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\obj\Debug\net8.0\SocietyMangementApi.csproj.AssemblyReference.cache
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\obj\Debug\net8.0\SocietyMangementApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\obj\Debug\net8.0\SocietyMangementApi.AssemblyInfoInputs.cache
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\obj\Debug\net8.0\SocietyMangementApi.AssemblyInfo.cs
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\obj\Debug\net8.0\SocietyMangementApi.csproj.CoreCompileInputs.cache
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\obj\Debug\net8.0\SocietyMangementApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\obj\Debug\net8.0\SocietyMangementApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\obj\Debug\net8.0\staticwebassets\msbuild.SocietyMangementApi.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\obj\Debug\net8.0\staticwebassets\msbuild.build.SocietyMangementApi.props
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.SocietyMangementApi.props
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.SocietyMangementApi.props
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\obj\Debug\net8.0\scopedcss\bundle\SocietyMangementApi.styles.css
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\obj\Debug\net8.0\SocietyM.1F580F79.Up2Date
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\obj\Debug\net8.0\SocietyMangementApi.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\obj\Debug\net8.0\refint\SocietyMangementApi.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\obj\Debug\net8.0\SocietyMangementApi.pdb
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\obj\Debug\net8.0\SocietyMangementApi.genruntimeconfig.cache
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\obj\Debug\net8.0\ref\SocietyMangementApi.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\System.Data.SqlClient.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\PRINCE\Desktop\Advance .Net\Project\SocietyMangementApi\bin\Debug\net8.0\Microsoft.Bcl.Memory.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\appsettings.json
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\SocietyMangementApi.exe
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\SocietyMangementApi.deps.json
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\SocietyMangementApi.runtimeconfig.json
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\SocietyMangementApi.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\SocietyMangementApi.pdb
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\Microsoft.Bcl.Memory.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\System.Data.SqlClient.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\obj\Debug\net8.0\SocietyMangementApi.csproj.AssemblyReference.cache
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\obj\Debug\net8.0\SocietyMangementApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\obj\Debug\net8.0\SocietyMangementApi.AssemblyInfoInputs.cache
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\obj\Debug\net8.0\SocietyMangementApi.AssemblyInfo.cs
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\obj\Debug\net8.0\SocietyMangementApi.csproj.CoreCompileInputs.cache
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\obj\Debug\net8.0\SocietyMangementApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\obj\Debug\net8.0\SocietyMangementApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\obj\Debug\net8.0\staticwebassets\msbuild.SocietyMangementApi.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\obj\Debug\net8.0\staticwebassets\msbuild.build.SocietyMangementApi.props
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.SocietyMangementApi.props
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.SocietyMangementApi.props
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\obj\Debug\net8.0\scopedcss\bundle\SocietyMangementApi.styles.css
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\obj\Debug\net8.0\SocietyM.1F580F79.Up2Date
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\obj\Debug\net8.0\SocietyMangementApi.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\obj\Debug\net8.0\refint\SocietyMangementApi.dll
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\obj\Debug\net8.0\SocietyMangementApi.pdb
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\obj\Debug\net8.0\SocietyMangementApi.genruntimeconfig.cache
+C:\Users\Abhay\Downloads\Project\Project\SocietyMangementApi\obj\Debug\net8.0\ref\SocietyMangementApi.dll

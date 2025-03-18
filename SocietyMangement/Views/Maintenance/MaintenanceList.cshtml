@@ -1,0 +1,122 @@
+﻿@model IEnumerable<SocietyMangement.Models.MaintenanceModel>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <input type="text" id="searchInput" class="form-control" placeholder="Search by User Name..." onkeyup="searchMaintenance()" />
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-secondary" onclick="resetSearch()">Reset</button>
+        </div>
+       
+        <div class="col-md-4">
+            <a asp-controller="Maintenance" asp-action="MaintenanceAddEdit">
+                <input type="button" value="ADD" class="btn btn-primary">
+            </a>
+        </div>
+    </div>
+</div>
+
+<h1>Maintenance List</h1>
+<br />
+<h5 class="text-danger">@TempData["ErrorMessage"]</h5>
+
+<table class="table table-bordered" id="maintenanceTable">
+    <thead>
+        <tr>
+            <th scope="col">Maintenance ID</th>
+            <th scope="col">Flat ID</th>
+            <th scope="col">Flat Number</th>
+            <th scope="col">User ID</th>
+            <th scope="col">User Name</th>
+            <th scope="col">Amount</th>
+            <th scope="col">Due Date</th>
+            <th scope="col">Payment Status</th>
+            <th scope="col">Paid Date</th>
+            <th scope="col">Notes</th>
+            <th scope="col">Created Date</th>
+            <th scope="col">Edit</th>
+            <th scope="col">Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var maintenance in Model)
+        {
+            <tr>
+                <td>@maintenance.MaintenanceID</td>
+                <td>@maintenance.FlatID</td>
+                <td>@maintenance.FlatNumber</td>
+                <td>@maintenance.UserID</td>
+                <td class="user-name">@maintenance.UserName</td>
+                <td>@maintenance.Amount</td>
+                <td>@maintenance.DueDate</td>
+                <td>@maintenance.PaymentStatus</td>
+                <td>@maintenance.PaidDate</td>
+                <td>@maintenance.Notes</td>
+                <td>@maintenance.CreatedDate.ToString("g")</td>
+                <td>
+                    <form method="post" asp-controller="Maintenance" asp-action="MaintenanceAddEdit">
+                        <input type="hidden" name="MaintenanceID" value="@maintenance.MaintenanceID" />
+                        <button type="submit" class="btn btn-outline-success btn-xs">
+                            <i class="ri-edit-2-line" style="font-size: 24px; color: blue;"></i>
+                        </button>
+                    </form>
+                </td>
+                <td>
+                    <form method="post" asp-controller="Maintenance" asp-action="Delete" class="delete-form">
+                        <input type="hidden" name="MaintenanceID" value="@maintenance.MaintenanceID" />
+                        <button type="button" class="btn btn-outline-danger btn-xs delete-button">
+                            <i class="ri-delete-bin-6-line" style="font-size: 24px; color: red;"></i>
+                        </button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script>
+    function searchMaintenance() {
+        let input = document.getElementById("searchInput").value.toLowerCase();
+        let rows = document.querySelectorAll("#maintenanceTable tbody tr");
+
+        rows.forEach(row => {
+            let userName = row.querySelector(".user-name").textContent.toLowerCase();
+            row.style.display = userName.includes(input) ? "" : "none";
+        });
+    }
+
+    function resetSearch() {
+        document.getElementById("searchInput").value = "";
+        searchMaintenance();
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const deleteButtons = document.querySelectorAll(".delete-button");
+
+        deleteButtons.forEach(button => {
+            button.addEventListener("click", function (e) {
+                e.preventDefault();
+                const form = this.closest(".delete-form");
+
+                Swal.fire({
+                    title: 'Are you sure?',
+                    text: "You won't be able to revert this!",
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Yes, delete it!'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        form.submit();
+                    }
+                });
+            });
+        });
+    });
+</script>

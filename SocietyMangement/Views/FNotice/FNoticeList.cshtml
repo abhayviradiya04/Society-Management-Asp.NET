@@ -1,0 +1,140 @@
+﻿@{
+    Layout = "_Layout_Frontend";
+}
+
+<!-- Hero Section -->
+<div class="hero page-inner overlay" style="background-image: url('../Frontend/images/hero_bg_1.jpg')">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-9 text-center mt-5">
+                <h1 class="heading" data-aos="fade-up">Notice Board</h1>
+
+                <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="200">
+                    <ol class="breadcrumb text-center justify-content-center">
+                        <li class="breadcrumb-item"><a asp-controller="Gallary" asp-action="GallaryList">Home</a></li>
+                        <li class="breadcrumb-item active text-white-50" aria-current="page">NoticeBoard</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Search Bar -->
+<div class="container mt-5">
+    <div class="container mt-5">
+       
+    </div>
+
+    <h2 class="text-center mb-4">📜 Latest Notices</h2>
+
+    <div class="row">
+        @foreach (var notice in Model)
+        {
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="notice-card card border-0 shadow-lg rounded-lg" data-aos="fade-up">
+                    <div class="card-header bg-gradient text-white">
+                        <h5 class="card-title event-title">@notice.Title</h5>
+                    </div>
+                    <div class="card-body">
+                        @* <p><i class="fas fa-user"></i> <strong>Posted By:</strong> @notice.PostedBy</p> *@
+                        <p><i class="fas fa-info-circle"></i> <strong>Description:</strong> @notice.Description</p>
+                        <p><i class="fas fa-calendar-alt"></i> <strong>Posted On:</strong> @notice.PostingDate.ToString("d")</p>
+
+                        @if (notice.ExpirationDate != null)
+                        {
+                            <p><i class="fas fa-clock"></i> <strong>Expires On:</strong> @notice.ExpirationDate?.ToString("d")</p>
+                        }
+
+                        <p><i class="fas fa-eye"></i> <strong>Visibility:</strong> @notice.Visibility</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        @if (notice.ExpirationDate != null && notice.ExpirationDate < DateTime.Now)
+                        {
+                            <span class="badge bg-danger p-2">⏳ Expired</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-success p-2">✅ Active</span>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+
+
+<!-- Custom Styles -->
+<style>
+    /* Hero Section */
+    .hero {
+        padding: 100px 0;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+
+    /* Notice Cards */
+    .notice-card {
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        background: #fff;
+        border-radius: 12px;
+    }
+
+        .notice-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+    .card-header {
+        background: linear-gradient(45deg, #007bff, #0056b3);
+        padding: 15px;
+        border-radius: 12px 12px 0 0;
+        color: white;
+        text-align: center;
+    }
+
+    .card-body p {
+        margin-bottom: 10px;
+        color: #555;
+    }
+
+    .card-footer {
+        background-color: #f9f9f9;
+        text-align: center;
+        border-radius: 0 0 12px 12px;
+        padding: 10px;
+    }
+
+    .badge {
+        font-size: 0.85rem;
+        padding: 6px 12px;
+    }
+
+    /* Search Box */
+    #searchNotice {
+        border: 2px solid #007bff;
+        border-radius: 25px;
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+
+        #searchNotice:focus {
+            border-color: #0056b3;
+            outline: none;
+            box-shadow: 0px 4px 10px rgba(0, 91, 255, 0.2);
+        }
+</style>
+
+<!-- Include AOS (Animate On Scroll) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+<script>
+    AOS.init({
+        duration: 800,
+        easing: "ease-in-out"
+    });
+</script>
